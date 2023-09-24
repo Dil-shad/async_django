@@ -24,11 +24,6 @@ def get_stories():
 
 
 ###############################################################
-# Note
-""" 
-When creating async await functions(without the sync_to_async decorator) 
-instead of 'time.sleep(x)'we should use await 'asyncio.sleep(x)' instead.
-"""
 
 
 @sync_to_async
@@ -64,6 +59,11 @@ def main_view(request):
     return HttpResponse('sync')
     #Total time 7.0239105224609375
 
+# Note
+""" 
+When creating async await functions(without the sync_to_async decorator) 
+instead of 'time.sleep(x)'we should use await 'asyncio.sleep(x)' instead.
+"""
 
 async def main_view_async(request):
     start_time = time.time()
