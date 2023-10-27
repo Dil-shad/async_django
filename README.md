@@ -2,4 +2,4 @@
  django, async await, async await python, django async views example,
 
 
- #inside Settings.views
+ #inside home.views
